@@ -39,7 +39,6 @@ public class LinkedList<E> {
     public int getSize(){
         return size;
     }
-
     public boolean isEmpty(){
         return size==0;
     }
@@ -113,7 +112,7 @@ public class LinkedList<E> {
 
     public E remove(int index){
         if(isEmpty())
-            throw new IllegalArgumentException("Cannot remove an empty LinkedList!");
+            throw new IllegalArgumentException("Cannot remove an empty LinkedListQueue!");
         if(index < 0 || index >= size)
             throw new IllegalArgumentException("remove failed!");
 
@@ -153,7 +152,7 @@ public class LinkedList<E> {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append("LinkedList:  ");
+        sb.append("LinkedListQueue:  ");
         for (int i = 0; i < size; i++) {
             if(i<size-1)
                 sb.append(get(i)+"->");
@@ -162,4 +161,5 @@ public class LinkedList<E> {
         }
       return sb.toString();
     }
+
 }
