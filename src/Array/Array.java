@@ -23,7 +23,6 @@ public class Array<E> {
     public int getCapacity(){
         return data.length;
     }
-
     /**
      * 获取数组中元素的个数
      * @return 数组中元素的个数
